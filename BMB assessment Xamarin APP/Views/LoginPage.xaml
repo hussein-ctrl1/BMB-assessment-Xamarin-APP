@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:BMB_assessment_Xamarin_APP.ViewModels" 
+             x:DataType="viewmodels:LoginPageVM"
+             x:Class="BMB_assessment_Xamarin_APP.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Padding="0" BackgroundColor="#03A9F4">
+            <Grid>
+                <StackLayout Margin="5,60,5,0">
+                    <Frame BackgroundColor="White" HasShadow="True" HeightRequest="250" HorizontalOptions="FillAndExpand">
+                        <StackLayout>
+                            <Label Text="SIGN IN" TextColor="Black" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <StackLayout Margin="0,1,0,0">
+                                <Frame Padding="0" Margin="0" BackgroundColor="Transparent" BorderColor="DarkGray" CornerRadius="40" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="AliceBlue" CornerRadius="40" HeightRequest="30" WidthRequest="25" Padding="0" Margin="7" HorizontalOptions="Start">
+
+                                        </Frame>
+                                        <Entry x:Name="Emailentery" Placeholder="Email" Keyboard="Email" Text="{Binding Email}" HorizontalOptions="FillAndExpand" Margin="0,0,8,0"/>
+                                    </StackLayout>
+                                </Frame>
+                                <Frame Padding="0" Margin="0,10,0,0" BackgroundColor="Transparent" BorderColor="DarkGray" CornerRadius="40" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="AliceBlue" CornerRadius="40" HeightRequest="30" WidthRequest="25" Padding="0" Margin="7" HorizontalOptions="Start">
+                                        </Frame>
+                                        <Entry x:Name="passwordentery" Placeholder="Password"  Text="{Binding Password}" IsPassword="True" HorizontalOptions="FillAndExpand" Margin="0,0,8,0"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                            <Button x:Name="Login" Text="Login" Command="{Binding LoginCommand}" BackgroundColor="Purple" FontAttributes="Bold" CornerRadius="40" TextColor="White"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMB_assessment_Xamarin_APP.Views.OrderListingPage">
+    <ListView x:Name="MyListView"
+            ItemsSource="{Binding Orders}"
+            ItemTapped="Handle_ItemTapped"
+            CachingStrategy="RecycleElement">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <Frame>
+                    <Label Text="Id"/>
+                    <Label Text="{Binding OrderId}"/>
+                </Frame>
+                <Frame>
+                    <Label Text="Amount"/>
+                    <Label Text="{Binding OrderAmount}"/>
+                </Frame>
+                <Frame>
+                    <Label Text="Description"/>
+                    <Label Text="{Binding ClientDescription}"/>
+                </Frame>
+                <Frame>
+                    <Label Text="Date"/>
+                    <Label Text="{Binding OrderDate }"/>
+                </Frame>
+            </DataTemplate>
+    </ListView.ItemTemplate>
+    
+  </ListView>
+</ContentPage>

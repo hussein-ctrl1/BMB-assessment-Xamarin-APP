@@ -1,0 +1,35 @@
+{
+  "ExtendedData": {
+    "inputs": [
+      "http://localhost:56520/LoginService.svc?singleWsdl"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "messageContract": true,
+    "namespaceMappings": [
+      "*, ServiceReference1"
+    ],
+    "references": [
+      "Newtonsoft.Json, {Newtonsoft.Json, 13.0.1}",
+      "Plugin.Multilingual, {Plugin.Multilingual, 1.1.6-beta}",
+      "Plugin.Multilingual.Abstractions, {Plugin.Multilingual, 1.1.6-beta}",
+      "SQLite-net, {sqlite-net-pcl, 1.8.116}",
+      "SQLitePCLRaw.batteries_v2, {SQLitePCLRaw.bundle_green, 2.0.4}",
+      "SQLitePCLRaw.core, {SQLitePCLRaw.core, 2.0.4}",
+      "SQLitePCLRaw.provider.e_sqlite3, {SQLitePCLRaw.provider.e_sqlite3, 2.0.4}",
+      "System.Buffers, {System.Buffers, 4.4.0}",
+      "System.Memory, {System.Memory, 4.5.3}",
+      "System.Numerics.Vectors, {System.Numerics.Vectors, 4.5.0}",
+      "System.Runtime.CompilerServices.Unsafe, {System.Runtime.CompilerServices.Unsafe, 4.5.2}",
+      "Xamarin.Essentials, {Xamarin.Essentials, 1.7.0}",
+      "Xamarin.Forms.Core, {Xamarin.Forms, 5.0.0.2244}",
+      "Xamarin.Forms.Platform, {Xamarin.Forms, 5.0.0.2244}",
+      "Xamarin.Forms.Xaml, {Xamarin.Forms, 5.0.0.2244}"
+    ],
+    "sync": true,
+    "targetFramework": "netstandard2.0",
+    "typeReuseMode": "All"
+  }
+}
